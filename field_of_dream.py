@@ -16,7 +16,6 @@ while True:
             part_pattern += elem
             pattern = f"[^{part_pattern.strip()}]"
             print(re.sub(pattern, "*", selection_word))
-            count += 1
             continue
         else:
             print("Invalid letter")
@@ -29,9 +28,4 @@ while True:
             break
         else:
             print("Invalid word")
-    count += 1
-
-
-
-
-
+            count += 1
